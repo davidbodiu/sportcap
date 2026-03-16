@@ -192,6 +192,25 @@
   .legend-count {
     color: rgba(255,255,255,0.3);
   }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    body { padding: 8px 8px 4px; }
+    h1 { font-size: 1rem; margin-bottom: 4px; }
+    #year-display { font-size: 4rem; right: 10px; bottom: 30px; }
+    #controls { gap: 8px; margin-top: 4px; margin-bottom: 4px; }
+    button { padding: 5px 12px; font-size: 0.7rem; }
+    .speed-control { margin-left: 0; }
+    .speed-control input[type=range] { width: 60px; }
+    .year-select { margin-left: 0; }
+    .source.note { padding-left: 0; font-size: 0.6rem; }
+    #legend { padding-left: 0; gap: 4px 10px; margin-top: 4px; margin-bottom: 4px; }
+    .legend-item { font-size: 0.6rem; }
+    .legend-swatch { width: 8px; height: 8px; }
+    .bar-label { font-size: 9px; }
+    .bar-value { font-size: 9px; }
+    .axis-label { font-size: 9px; }
+  }
 </style>
 </head>
 <body>
@@ -225,7 +244,10 @@
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 const TOP_N = 20;
-const MARGIN = { top: 28, right: 90, bottom: 6, left: 180 };
+const isMobile = window.innerWidth <= 768;
+const MARGIN = isMobile
+  ? { top: 20, right: 60, bottom: 4, left: 110 }
+  : { top: 28, right: 90, bottom: 6, left: 180 };
 
 // Compute bar size from available viewport height
 // Reserve space for elements below the chart (note, legend, controls, source)
@@ -301,12 +323,14 @@ async function main() {
 
   const g = svg.append("g").attr("transform", `translate(${MARGIN.left}, ${MARGIN.top})`);
 
-  // Unit label
-  g.append("text")
-    .attr("x", 0).attr("y", -22)
-    .attr("fill", "rgba(255,255,255,0.35)")
-    .attr("font-size", "10px")
-    .text("USDm");
+  // Unit label (hidden on mobile)
+  if (!isMobile) {
+    g.append("text")
+      .attr("x", 0).attr("y", -22)
+      .attr("fill", "rgba(255,255,255,0.35)")
+      .attr("font-size", "10px")
+      .text("USDm");
+  }
 
   // Scales
   const x = d3.scaleLinear().range([0, innerWidth]);
@@ -330,6 +354,29 @@ async function main() {
 
   const yearDisplay = document.getElementById("year-display");
   const fmtVal = d => "$" + d3.format(",")(Math.round(d)) + "M";
+
+  const SHORT_NAMES = {
+    "Manchester United": "Man Utd",
+    "Manchester City": "Man City",
+    "Borussia Dortmund": "Dortmund",
+    "Tottenham Hotspur": "Spurs",
+    "Paris Saint-Germain": "PSG",
+    "Atlético Madrid": "Atlético",
+    "Newcastle United": "Newcastle",
+    "West Ham United": "West Ham",
+    "Internazionale": "Inter",
+    "Leicester City": "Leicester",
+    "Brighton & Hove Albion": "Brighton",
+    "Crystal Palace": "C. Palace",
+    "Seattle Sounders": "Seattle",
+    "Atlanta United": "Atlanta",
+    "Hamburger SV": "Hamburg",
+    "Werder Bremen": "Bremen",
+    "VfB Stuttgart": "Stuttgart",
+  };
+  function displayName(team) {
+    return isMobile ? (SHORT_NAMES[team] || team) : team;
+  }
 
   // Preload logos
   const allTeams = [...new Set(raw.map(d => d.team))];
@@ -390,7 +437,7 @@ async function main() {
     enter.append("text")
       .attr("class", "bar-label")
       .attr("x", -10).attr("y", BAR_HEIGHT / 2)
-      .text(d => d.team);
+      .text(d => displayName(d.team));
 
     enter.append("text")
       .attr("class", "bar-value")
