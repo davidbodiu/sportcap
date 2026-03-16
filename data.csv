@@ -1,0 +1,386 @@
+Year,Rank,Team,League,Value
+2007,1,Manchester United,Premier League,1453
+2007,2,Real Madrid,La Liga,1036
+2007,3,Arsenal,Premier League,915
+2007,4,Bayern Munich,Bundesliga,838
+2007,5,Milan,Serie A,824
+2007,6,Juventus,Serie A,567
+2007,7,Internazionale,Serie A,555
+2007,8,Liverpool,Premier League,537
+2007,9,Barcelona,La Liga,535
+2007,10,Schalke 04,Bundesliga,471
+2007,11,Chelsea,Premier League,454
+2007,12,Lyon,Ligue 1,343
+2007,13,Newcastle United,Premier League,260
+2007,14,Tottenham Hotspur,Premier League,243
+2007,15,Roma,Serie A,224
+2007,16,Hamburger SV,Bundesliga,221
+2007,17,Manchester City,Premier League,208
+2007,18,Borussia Dortmund,Bundesliga,199
+2007,19,Ajax,Eredivisie,196
+2007,20,Celtic,Scottish Premiership,185
+2007,21,Everton,Premier League,165
+2007,22,Marseille,Ligue 1,157
+2007,23,West Ham United,Premier League,156
+2007,24,Rangers,Scottish Premiership,147
+2007,25,Aston Villa,Premier League,140
+2008,1,Manchester United,Premier League,1800
+2008,2,Real Madrid,La Liga,1285
+2008,3,Arsenal,Premier League,1200
+2008,4,Liverpool,Premier League,1050
+2008,5,Bayern Munich,Bundesliga,917
+2008,6,Milan,Serie A,798
+2008,7,Barcelona,La Liga,784
+2008,8,Chelsea,Premier League,764
+2008,9,Juventus,Serie A,510
+2008,10,Schalke 04,Bundesliga,470
+2008,11,Roma,Serie A,434
+2008,12,Tottenham Hotspur,Premier League,414
+2008,13,Lyon,Ligue 1,408
+2008,14,Internazionale,Serie A,403
+2008,15,Borussia Dortmund,Bundesliga,323
+2008,16,Newcastle United,Premier League,300
+2008,17,Hamburger SV,Bundesliga,293
+2008,18,Werder Bremen,Bundesliga,262
+2008,19,Valencia,La Liga,254
+2008,20,Celtic,Scottish Premiership,227
+2008,21,Everton,Premier League,197
+2008,22,West Ham United,Premier League,195
+2008,23,Manchester City,Premier League,191
+2008,24,Aston Villa,Premier League,190
+2008,25,Marseille,Ligue 1,187
+2009,1,Manchester United,Premier League,1870
+2009,2,Real Madrid,La Liga,1353
+2009,3,Arsenal,Premier League,1200
+2009,4,Bayern Munich,Bundesliga,1110
+2009,5,Liverpool,Premier League,1010
+2009,6,Milan,Serie A,990
+2009,7,Barcelona,La Liga,960
+2009,8,Chelsea,Premier League,800
+2009,9,Juventus,Serie A,600
+2009,10,Schalke 04,Bundesliga,510
+2009,11,Tottenham Hotspur,Premier League,445
+2009,12,Lyon,Ligue 1,423
+2009,13,Roma,Serie A,381
+2009,14,Internazionale,Serie A,370
+2009,15,Hamburger SV,Bundesliga,330
+2009,16,Borussia Dortmund,Bundesliga,325
+2009,17,Manchester City,Premier League,310
+2009,18,Werder Bremen,Bundesliga,292
+2009,19,Newcastle United,Premier League,285
+2009,20,VfB Stuttgart,Bundesliga,264
+2009,21,Aston Villa,Premier League,240
+2009,21,Marseille,Ligue 1,240
+2009,23,Celtic,Scottish Premiership,218
+2009,24,Everton,Premier League,207
+2009,25,Rangers,Scottish Premiership,194
+2010,1,Manchester United,Premier League,1835
+2010,2,Real Madrid,La Liga,1323
+2010,3,Arsenal,Premier League,1181
+2010,4,Barcelona,La Liga,1000
+2010,5,Bayern Munich,Bundesliga,990
+2010,6,Liverpool,Premier League,822
+2010,7,Milan,Serie A,800
+2010,8,Juventus,Serie A,656
+2010,9,Chelsea,Premier League,646
+2010,10,Internazionale,Serie A,413
+2010,11,Schalke 04,Bundesliga,384
+2010,12,Tottenham Hotspur,Premier League,372
+2010,13,Lyon,Ligue 1,333
+2010,14,Hamburger SV,Bundesliga,329
+2010,15,Roma,Serie A,308
+2010,16,Werder Bremen,Bundesliga,274
+2010,17,Marseille,Ligue 1,262
+2010,18,Borussia Dortmund,Bundesliga,261
+2010,19,Manchester City,Premier League,258
+2010,20,Newcastle United,Premier League,198
+2011,1,Manchester United,Premier League,1864
+2011,2,Real Madrid,La Liga,1451
+2011,3,Arsenal,Premier League,1192
+2011,4,Bayern Munich,Bundesliga,1048
+2011,5,Barcelona,La Liga,975
+2011,6,Milan,Serie A,838
+2011,7,Chelsea,Premier League,658
+2011,8,Juventus,Serie A,628
+2011,9,Liverpool,Premier League,552
+2011,10,Internazionale,Serie A,441
+2011,11,Tottenham Hotspur,Premier League,412
+2011,12,Schalke 04,Bundesliga,377
+2011,13,Lyon,Ligue 1,358
+2011,14,Hamburger SV,Bundesliga,340
+2011,15,Manchester City,Premier League,291
+2011,16,VfB Stuttgart,Bundesliga,281
+2011,17,Werder Bremen,Bundesliga,279
+2011,18,Marseille,Ligue 1,277
+2011,19,Atlético Madrid,La Liga,275
+2011,20,Borussia Dortmund,Bundesliga,260
+2012,1,Manchester United,Premier League,2235
+2012,2,Real Madrid,La Liga,1877
+2012,3,Barcelona,La Liga,1307
+2012,4,Arsenal,Premier League,1292
+2012,5,Bayern Munich,Bundesliga,1235
+2012,6,Milan,Serie A,989
+2012,7,Chelsea,Premier League,761
+2012,8,Liverpool,Premier League,619
+2012,9,Juventus,Serie A,591
+2012,10,Schalke 04,Bundesliga,587
+2012,11,Tottenham Hotspur,Premier League,564
+2012,12,Internazionale,Serie A,490
+2012,13,Manchester City,Premier League,443
+2012,14,Borussia Dortmund,Bundesliga,394
+2012,15,Lyon,Ligue 1,385
+2012,16,Hamburger SV,Bundesliga,355
+2012,17,Roma,Serie A,354
+2012,18,Marseille,Ligue 1,349
+2012,19,Valencia,La Liga,288
+2012,20,Napoli,Serie A,283
+2013,1,Real Madrid,La Liga,3300
+2013,2,Manchester United,Premier League,3165
+2013,3,Barcelona,La Liga,2600
+2013,4,Arsenal,Premier League,1326
+2013,5,Bayern Munich,Bundesliga,1309
+2013,6,Milan,Serie A,945
+2013,7,Chelsea,Premier League,901
+2013,8,Juventus,Serie A,694
+2013,9,Manchester City,Premier League,689
+2013,10,Liverpool,Premier League,651
+2013,11,Tottenham Hotspur,Premier League,520
+2013,12,Schalke 04,Bundesliga,498
+2013,13,Borussia Dortmund,Bundesliga,456
+2013,14,Internazionale,Serie A,401
+2013,15,Lyon,Ligue 1,368
+2013,16,Corinthians,Brasileirão,358
+2013,17,Napoli,Serie A,330
+2013,18,Hamburger SV,Bundesliga,300
+2013,19,Marseille,Ligue 1,285
+2013,20,Newcastle United,Premier League,263
+2014,1,Real Madrid,La Liga,3440
+2014,2,Barcelona,La Liga,3200
+2014,3,Manchester United,Premier League,2810
+2014,4,Bayern Munich,Bundesliga,1850
+2014,5,Arsenal,Premier League,1331
+2014,6,Chelsea,Premier League,868
+2014,7,Manchester City,Premier League,863
+2014,8,Milan,Serie A,856
+2014,9,Juventus,Serie A,850
+2014,10,Liverpool,Premier League,691
+2014,11,Borussia Dortmund,Bundesliga,599
+2014,12,Schalke 04,Bundesliga,580
+2014,13,Tottenham Hotspur,Premier League,514
+2014,14,Internazionale,Serie A,483
+2014,15,Paris Saint-Germain,Ligue 1,415
+2014,16,Galatasaray,Süper Lig,347
+2014,17,Atlético Madrid,La Liga,328
+2014,18,Hamburger SV,Bundesliga,326
+2014,19,Roma,Serie A,307
+2014,20,Napoli,Serie A,296
+2015,1,Real Madrid,La Liga,3260
+2015,2,Barcelona,La Liga,3160
+2015,3,Manchester United,Premier League,3100
+2015,4,Bayern Munich,Bundesliga,2350
+2015,5,Manchester City,Premier League,1380
+2015,6,Chelsea,Premier League,1370
+2015,7,Arsenal,Premier League,1310
+2015,8,Liverpool,Premier League,982
+2015,9,Juventus,Serie A,837
+2015,10,Milan,Serie A,775
+2015,11,Borussia Dortmund,Bundesliga,700
+2015,12,Paris Saint-Germain,Ligue 1,634
+2015,13,Tottenham Hotspur,Premier League,600
+2015,14,Schalke 04,Bundesliga,572
+2015,15,Internazionale,Serie A,439
+2015,16,Atlético Madrid,La Liga,436
+2015,17,Napoli,Serie A,353
+2015,18,Newcastle United,Premier League,349
+2015,19,West Ham United,Premier League,309
+2015,20,Galatasaray,Süper Lig,294
+2016,1,Real Madrid,La Liga,3645
+2016,2,Barcelona,La Liga,3549
+2016,3,Manchester United,Premier League,3317
+2016,4,Bayern Munich,Bundesliga,2678
+2016,5,Arsenal,Premier League,2017
+2016,6,Manchester City,Premier League,1921
+2016,7,Chelsea,Premier League,1661
+2016,8,Liverpool,Premier League,1548
+2016,9,Juventus,Serie A,1299
+2016,10,Tottenham Hotspur,Premier League,1017
+2016,11,Borussia Dortmund,Bundesliga,836
+2016,12,Milan,Serie A,825
+2016,13,Paris Saint-Germain,Ligue 1,814
+2016,14,Schalke 04,Bundesliga,655
+2016,15,Atlético Madrid,La Liga,633
+2016,16,Internazionale,Serie A,559
+2016,17,West Ham United,Premier League,542
+2016,18,Roma,Serie A,508
+2016,19,Napoli,Serie A,396
+2016,20,Newcastle United,Premier League,383
+2017,1,Manchester United,Premier League,3690
+2017,2,Barcelona,La Liga,3635
+2017,3,Real Madrid,La Liga,3580
+2017,4,Bayern Munich,Bundesliga,2713
+2017,5,Manchester City,Premier League,2083
+2017,6,Arsenal,Premier League,1932
+2017,7,Chelsea,Premier League,1845
+2017,8,Liverpool,Premier League,1492
+2017,9,Juventus,Serie A,1258
+2017,10,Tottenham Hotspur,Premier League,1058
+2017,11,Paris Saint-Germain,Ligue 1,841
+2017,12,Borussia Dortmund,Bundesliga,808
+2017,13,Milan,Serie A,802
+2017,14,Atlético Madrid,La Liga,732
+2017,15,West Ham United,Premier League,634
+2017,16,Schalke 04,Bundesliga,629
+2017,17,Roma,Serie A,569
+2017,18,Internazionale,Serie A,537
+2017,19,Leicester City,Premier League,413
+2017,20,Napoli,Serie A,379
+2018,1,Manchester United,Premier League,4123
+2018,2,Real Madrid,La Liga,4088
+2018,3,Barcelona,La Liga,4060
+2018,4,Bayern Munich,Bundesliga,3063
+2018,5,Manchester City,Premier League,2474
+2018,6,Arsenal,Premier League,2238
+2018,7,Chelsea,Premier League,2062
+2018,8,Liverpool,Premier League,1944
+2018,9,Juventus,Serie A,1472
+2018,10,Tottenham Hotspur,Premier League,1237
+2018,11,Paris Saint-Germain,Ligue 1,917
+2018,12,Borussia Dortmund,Bundesliga,901
+2018,13,Atlético Madrid,La Liga,848
+2018,14,West Ham United,Premier League,754
+2018,15,Schalke 04,Bundesliga,707
+2018,16,Roma,Serie A,618
+2018,17,Milan,Serie A,612
+2018,18,Internazionale,Serie A,606
+2018,19,Leicester City,Premier League,500
+2018,20,Napoli,Serie A,471
+2019,1,Real Madrid,La Liga,4239
+2019,2,Barcelona,La Liga,4205
+2019,3,Manchester United,Premier League,3808
+2019,4,Bayern Munich,Bundesliga,3024
+2019,5,Manchester City,Premier League,2688
+2019,6,Chelsea,Premier League,2576
+2019,7,Arsenal,Premier League,2268
+2019,8,Liverpool,Premier League,2183
+2019,9,Tottenham Hotspur,Premier League,1624
+2019,10,Juventus,Serie A,1512
+2019,11,Paris Saint-Germain,Ligue 1,1092
+2019,12,Atlético Madrid,La Liga,953
+2019,13,Borussia Dortmund,Bundesliga,896
+2019,14,Schalke 04,Bundesliga,683
+2019,15,Internazionale,Serie A,672
+2019,16,Roma,Serie A,622
+2019,17,West Ham United,Premier League,616
+2019,18,Milan,Serie A,583
+2019,19,Everton,Premier League,476
+2019,20,Newcastle United,Premier League,381
+2021,1,Barcelona,La Liga,4760
+2021,2,Real Madrid,La Liga,4750
+2021,3,Bayern Munich,Bundesliga,4215
+2021,4,Manchester United,Premier League,4200
+2021,5,Liverpool,Premier League,4100
+2021,6,Manchester City,Premier League,4000
+2021,7,Chelsea,Premier League,3200
+2021,8,Arsenal,Premier League,2800
+2021,9,Paris Saint-Germain,Ligue 1,2500
+2021,10,Tottenham Hotspur,Premier League,2300
+2021,11,Juventus,Serie A,1950
+2021,12,Borussia Dortmund,Bundesliga,1900
+2021,13,Atlético Madrid,La Liga,1000
+2021,14,Internazionale,Serie A,743
+2021,15,Everton,Premier League,658
+2021,16,Milan,Serie A,559
+2021,17,Roma,Serie A,548
+2021,18,West Ham United,Premier League,508
+2021,19,Leicester City,Premier League,455
+2021,20,Ajax,Eredivisie,413
+2022,1,Real Madrid,La Liga,5100
+2022,2,Barcelona,La Liga,5000
+2022,3,Manchester United,Premier League,4600
+2022,4,Liverpool,Premier League,4450
+2022,5,Bayern Munich,Bundesliga,4275
+2022,6,Manchester City,Premier League,4250
+2022,7,Paris Saint-Germain,Ligue 1,3200
+2022,8,Chelsea,Premier League,3100
+2022,9,Juventus,Serie A,2450
+2022,10,Tottenham Hotspur,Premier League,2350
+2022,11,Arsenal,Premier League,2050
+2022,12,Borussia Dortmund,Bundesliga,1800
+2022,13,Atlético Madrid,La Liga,1500
+2022,14,Milan,Serie A,1200
+2022,15,Internazionale,Serie A,1000
+2022,16,Everton,Premier League,940
+2022,17,Leicester City,Premier League,925
+2022,18,West Ham United,Premier League,900
+2022,19,Leeds United,Premier League,800
+2022,20,Aston Villa,Premier League,750
+2023,1,Real Madrid,La Liga,6070
+2023,2,Manchester United,Premier League,6000
+2023,3,Barcelona,La Liga,5508
+2023,4,Liverpool,Premier League,5288
+2023,5,Manchester City,Premier League,4990
+2023,6,Bayern Munich,Bundesliga,4860
+2023,7,Paris Saint-Germain,Ligue 1,4212
+2023,8,Chelsea,Premier League,3100
+2023,9,Tottenham Hotspur,Premier League,2803
+2023,10,Arsenal,Premier League,2263
+2023,11,Juventus,Serie A,2160
+2023,12,Borussia Dortmund,Bundesliga,1928
+2023,13,Atlético Madrid,La Liga,1539
+2023,14,Milan,Serie A,1200
+2023,15,West Ham United,Premier League,1079
+2023,16,Internazionale,Serie A,1026
+2023,17,LAFC,MLS,1000
+2023,18,LA Galaxy,MLS,925
+2023,19,Atlanta United,MLS,850
+2023,20,Crystal Palace,Premier League,806
+2024,1,Real Madrid,La Liga,6600
+2024,2,Manchester United,Premier League,6550
+2024,3,Barcelona,La Liga,5600
+2024,4,Liverpool,Premier League,5370
+2024,5,Manchester City,Premier League,5100
+2024,6,Bayern Munich,Bundesliga,5000
+2024,7,Paris Saint-Germain,Ligue 1,4400
+2024,8,Tottenham Hotspur,Premier League,3200
+2024,9,Chelsea,Premier League,3130
+2024,10,Arsenal,Premier League,2600
+2024,11,Juventus,Serie A,2050
+2024,12,Borussia Dortmund,Bundesliga,1980
+2024,13,Atlético Madrid,La Liga,1600
+2024,14,Milan,Serie A,1430
+2024,15,LAFC,MLS,1200
+2024,16,West Ham United,Premier League,1100
+2024,17,Inter Miami,MLS,1030
+2024,18,Internazionale,Serie A,1000
+2024,19,LA Galaxy,MLS,950
+2024,20,Atlanta United,MLS,900
+2025,1,Real Madrid,La Liga,6750
+2025,2,Manchester United,Premier League,6600
+2025,3,Barcelona,La Liga,5650
+2025,4,Liverpool,Premier League,5400
+2025,5,Manchester City,Premier League,5300
+2025,6,Bayern Munich,Bundesliga,5100
+2025,7,Paris Saint-Germain,Ligue 1,4600
+2025,8,Arsenal,Premier League,3400
+2025,9,Tottenham Hotspur,Premier League,3300
+2025,10,Chelsea,Premier League,3250
+2025,11,Juventus,Serie A,2150
+2025,12,Borussia Dortmund,Bundesliga,2050
+2025,13,Atlético Madrid,La Liga,1700
+2025,14,Milan,Serie A,1500
+2025,15,LAFC,MLS,1250
+2025,16,Inter Miami,MLS,1200
+2025,17,Internazionale,Serie A,1150
+2025,18,West Ham United,Premier League,1125
+2025,19,Newcastle United,Premier League,1100
+2025,20,LA Galaxy,MLS,1000
+2025,21,Atlanta United,MLS,975
+2025,22,Aston Villa,Premier League,900
+2025,23,NYCFC,MLS,875
+2025,24,Brighton & Hove Albion,Premier League,860
+2025,25,Fulham,Premier League,850
+2025,26,Austin FC,MLS,825
+2025,27,Roma,Serie A,810
+2025,28,Seattle Sounders,MLS,800
+2025,29,Crystal Palace,Premier League,790
+2025,30,D.C. United,MLS,785
