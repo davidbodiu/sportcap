@@ -250,14 +250,10 @@ const MARGIN = isMobile
   : { top: 28, right: 90, bottom: 6, left: 180 };
 
 // Compute bar size from available viewport height
-// Reserve space for elements below the chart (note, legend, controls, source)
-const belowChart = document.querySelector(".source.note").offsetHeight
-  + document.getElementById("legend").offsetHeight
-  + document.getElementById("controls").offsetHeight
-  + document.querySelector("p.source:last-of-type").offsetHeight + 40;
+const reservedBelow = isMobile ? 120 : 100;
 const chartContainer = document.getElementById("chart-container");
-const availableHeight = (window.innerHeight - chartContainer.offsetTop - belowChart) - MARGIN.top - MARGIN.bottom;
-const BAR_HEIGHT = Math.max(16, Math.floor(availableHeight / TOP_N * 0.82));
+const availableHeight = Math.max(300, window.innerHeight - chartContainer.offsetTop - reservedBelow) - MARGIN.top - MARGIN.bottom;
+const BAR_HEIGHT = Math.max(14, Math.floor(availableHeight / TOP_N * 0.82));
 const BAR_PAD = Math.max(2, Math.floor(availableHeight / TOP_N - BAR_HEIGHT));
 const LOGO_SIZE = Math.min(22, BAR_HEIGHT - 2);
 
