@@ -16,8 +16,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    padding: 10px 24px 6px;
+    height: 100vh;
+    padding: 12px 24px 8px;
+    overflow: hidden;
   }
 
   h1 {
@@ -33,6 +34,8 @@
     position: relative;
     width: 100%;
     max-width: 1100px;
+    flex: 1;
+    min-height: 0;
   }
 
   svg { width: 100%; overflow: visible; }
@@ -86,6 +89,7 @@
     align-items: center;
     gap: 12px;
     margin-top: 6px;
+    margin-bottom: 8px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -221,10 +225,19 @@
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 const TOP_N = 20;
-const BAR_HEIGHT = 30;
-const BAR_PAD = 5;
-const MARGIN = { top: 30, right: 90, bottom: 10, left: 180 };
-const LOGO_SIZE = 22;
+const MARGIN = { top: 28, right: 90, bottom: 6, left: 180 };
+
+// Compute bar size from available viewport height
+// Reserve space for elements below the chart (note, legend, controls, source)
+const belowChart = document.querySelector(".source.note").offsetHeight
+  + document.getElementById("legend").offsetHeight
+  + document.getElementById("controls").offsetHeight
+  + document.querySelector("p.source:last-of-type").offsetHeight + 40;
+const chartContainer = document.getElementById("chart-container");
+const availableHeight = (window.innerHeight - chartContainer.offsetTop - belowChart) - MARGIN.top - MARGIN.bottom;
+const BAR_HEIGHT = Math.max(16, Math.floor(availableHeight / TOP_N * 0.82));
+const BAR_PAD = Math.max(2, Math.floor(availableHeight / TOP_N - BAR_HEIGHT));
+const LOGO_SIZE = Math.min(22, BAR_HEIGHT - 2);
 
 const LEAGUE_COLORS = {
   "Premier League":       "#1A3260",
