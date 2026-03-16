@@ -17,14 +17,14 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 16px 24px 10px;
+    padding: 10px 24px 6px;
   }
 
   h1 {
     font-size: 1.6rem;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     letter-spacing: -0.01em;
     text-align: center;
   }
@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 10px;
+    margin-top: 6px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -145,7 +145,7 @@
   .year-select select:focus { outline: none; border-color: rgba(255,255,255,0.3); }
 
   .source {
-    margin-top: 8px;
+    margin-top: auto;
     font-size: 0.68rem;
     color: rgba(255,255,255,0.25);
   }
@@ -166,7 +166,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px 16px;
-    margin-top: 12px;
+    margin-top: 6px;
+    margin-bottom: 8px;
     width: 100%;
     max-width: 1100px;
     padding-left: 180px;
@@ -215,7 +216,7 @@
   </div>
 </div>
 
-<p class="source">Source: Forbes</p>
+<p class="source">Source: Forbes &mdash; <a href="https://x.com/david_bodiu" target="_blank" style="color:rgba(255,255,255,0.35);text-decoration:none;">Twitter @david_bodiu</a></p>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
@@ -535,6 +536,12 @@ async function main() {
 
   document.getElementById("btn-play-pause").addEventListener("click", () => {
     playing ? pause() : play();
+  });
+  document.addEventListener("keydown", e => {
+    if (e.code === "Space" && e.target === document.body) {
+      e.preventDefault();
+      playing ? pause() : play();
+    }
   });
   document.getElementById("btn-reset").addEventListener("click", reset);
   document.getElementById("speed").addEventListener("input", function() {
