@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100dvh;
+    min-height: var(--vh, 100vh);
     padding: 12px 24px 8px;
   }
 
@@ -146,7 +146,7 @@
   .year-select select:focus { outline: none; border-color: rgba(255,255,255,0.3); }
 
   .source {
-    margin-top: 8px;
+    margin-top: auto;
     font-size: 0.68rem;
     color: rgba(255,255,255,0.25);
   }
@@ -238,6 +238,11 @@
 
 <p class="source">Source: Forbes &mdash; <a href="https://x.com/david_bodiu" target="_blank" style="color:rgba(255,255,255,0.35);text-decoration:none;">Twitter @david_bodiu</a></p>
 
+<script>
+  // Capture viewport height before any scroll/resize changes it
+  const INITIAL_VH = window.visualViewport?.height || window.innerHeight;
+  document.documentElement.style.setProperty('--vh', INITIAL_VH + 'px');
+</script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 const TOP_N = 20;
@@ -246,11 +251,10 @@ const MARGIN = isMobile
   ? { top: 20, right: 60, bottom: 4, left: 110 }
   : { top: 28, right: 90, bottom: 6, left: 180 };
 
-// Compute bar size from available viewport height
-const reservedBelow = isMobile ? 140 : 100;
+// Compute bar size from fixed viewport height (captured before scroll)
+const reservedBelow = isMobile ? 120 : 100;
 const chartContainer = document.getElementById("chart-container");
-const vh = window.visualViewport?.height || window.innerHeight;
-const availableHeight = Math.max(300, vh - chartContainer.offsetTop - reservedBelow) - MARGIN.top - MARGIN.bottom;
+const availableHeight = Math.max(300, INITIAL_VH - chartContainer.offsetTop - reservedBelow) - MARGIN.top - MARGIN.bottom;
 const BAR_HEIGHT = Math.max(14, Math.floor(availableHeight / TOP_N * 0.82));
 const BAR_PAD = Math.max(2, Math.floor(availableHeight / TOP_N - BAR_HEIGHT));
 const LOGO_SIZE = Math.min(22, BAR_HEIGHT - 2);
