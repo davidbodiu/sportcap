@@ -264,7 +264,7 @@ const MARGIN = isMobile
   : { top: 28, right: 90, bottom: 6, left: 180 };
 
 // Compute bar size from fixed viewport height (captured before scroll)
-const reservedBelow = isMobile ? 120 : 100;
+const reservedBelow = isMobile ? 140 : 140;
 const chartContainer = document.getElementById("chart-container");
 const availableHeight = Math.max(300, INITIAL_VH - chartContainer.offsetTop - reservedBelow) - MARGIN.top - MARGIN.bottom;
 const BAR_HEIGHT = Math.max(14, Math.floor(availableHeight / TOP_N * 0.82));
