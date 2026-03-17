@@ -248,9 +248,12 @@
 <p class="source">Source: Forbes &mdash; <a href="https://x.com/david_bodiu" target="_blank" style="color:rgba(255,255,255,0.35);text-decoration:none;">Twitter @david_bodiu</a></p>
 
 <script>
-  // Capture viewport height before any scroll/resize changes it
-  const INITIAL_VH = window.visualViewport?.height || window.innerHeight;
-  document.documentElement.style.setProperty('--vh', INITIAL_VH + 'px');
+  // Capture viewport height before any scroll/resize changes it (mobile only)
+  const _isMobile = window.innerWidth <= 768;
+  const INITIAL_VH = _isMobile
+    ? (window.visualViewport?.height || window.innerHeight)
+    : window.innerHeight;
+  if (_isMobile) document.documentElement.style.setProperty('--vh', INITIAL_VH + 'px');
 </script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
