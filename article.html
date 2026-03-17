@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Evolution of Football Club Valuations (2007-2025) — Forbes Most Valuable Clubs</title>
+<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: #0b1628;
+    color: #c8cdd5;
+    line-height: 1.7;
+  }
+
+  .article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 48px;
+  }
+  .subtitle a {
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+  }
+  .subtitle a:hover { color: rgba(255,255,255,0.55); }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 56px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #b0b8c4;
+  }
+
+  .chart-wrap {
+    margin: 28px 0 36px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 24px 20px 16px;
+  }
+
+  .chart-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+
+  svg { display: block; width: 100%; overflow: visible; }
+
+  .chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    margin-top: 12px;
+  }
+  .chart-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.45);
+  }
+  .chart-legend-swatch {
+    width: 10px;
+    height: 3px;
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+
+  .source {
+    margin-top: 56px;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.2);
+    text-align: center;
+  }
+  .source a {
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 32px;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: rgba(255,255,255,0.6); }
+
+  /* Tooltip */
+  .tooltip {
+    position: fixed;
+    pointer-events: none;
+    background: rgba(11,22,40,0.95);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 0.72rem;
+    color: #e0e4ea;
+    white-space: nowrap;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.12s;
+  }
+
+  .race-iframe { width: 100%; height: 680px; border: none; display: block; }
+
+  @media (max-width: 600px) {
+    .article { padding: 24px 16px 48px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 40px; }
+    .chart-wrap { padding: 16px 12px 12px; margin: 20px 0 28px; }
+    .race-iframe { height: 520px; }
+  }
+</style>
+</head>
+<body>
+<div class="article">
+
+<a href="index.html" class="back-link">&larr; Articles</a>
+
+<h1>The Evolution of Football Club Valuations (2007-2025)</h1>
+
+
+<div class="chart-wrap" style="padding:0;overflow:hidden;">
+  <iframe src="race.html" class="race-iframe"></iframe>
+</div>
+
+<!-- ── Section 1 ── -->
+<h2>An Era of Impressive Growth</h2>
+<p>In 2007, the combined valuation of the top 20 football clubs stood at $10 billion. In 2025, that figure has reached almost $64 billion, representing a ~10% CAGR. The floor to enter the top 20 (now held by LA Galaxy) is $1 billion, more than five times what it cost to be in 2007 or equal to the second most valuable club at that time (Real Madrid).</p>
+
+<div class="chart-wrap">
+  <div class="chart-title">Combined Valuation of Top 20 Clubs by League ($B)</div>
+  <svg id="chart1"></svg>
+  <div class="chart-legend" id="legend1"></div>
+  <p style="font-size:0.68rem;color:rgba(255,255,255,0.25);margin:8px 0 0;">Note: 2020 data missing due to COVID-19</p>
+</div>
+
+<!-- ── Section 2 ── -->
+<h2>The Premier League's Dominance</h2>
+<p>The Premier League's international and domestic broadcasting rights revenue has propelled the value of not only its most established clubs, but also the rest of the league, establishing a financial floor that other non-league rivals cannot match. The Premier League has more clubs in the top 20 every year than any other league.</p>
+
+<div class="chart-wrap">
+  <div class="chart-title">Number of Clubs in the Top 20 by League</div>
+  <svg id="chart2"></svg>
+  <div class="chart-legend" id="legend2"></div>
+  <p style="font-size:0.68rem;color:rgba(255,255,255,0.25);margin:8px 0 0;">Note: 2020 data missing due to COVID-19</p>
+</div>
+
+<!-- ── Section 3 ── -->
+<h2>State Ownership</h2>
+<p>Following PSG and Manchester City's acquisitions, the valuations of both clubs have skyrocketed, overtaking (almost) all of their rivals in their respective leagues. In 2007 Manchester City was ranked 17th with a valuation of $208 million. Following its acquisition in 2008, it is now ranked 5th globally with a valuation of $5.3 billion.</p>
+
+<div class="chart-wrap">
+  <div class="chart-title">Valuation Trajectory: Man City & PSG ($M)</div>
+  <svg id="chart3"></svg>
+  <div class="chart-legend" id="legend3"></div>
+  <p style="font-size:0.68rem;color:rgba(255,255,255,0.25);margin:8px 0 0;">Note: 2020 data missing due to COVID-19</p>
+</div>
+
+<!-- ── Section 4 ── -->
+<h2>The Rise of MLS (and Decline of Serie A)</h2>
+<p>The most notable recent trend is the emergence of the MLS as a global contender. In 2007, Serie A had three clubs in the Top 10, in 2025 they have none, indicating a severe lag behind their former English and Spanish counterparts.</p>
+
+<div class="chart-wrap">
+  <div class="chart-title">Combined Valuation in Forbes Top 20: MLS vs Serie A ($B)</div>
+  <svg id="chart4"></svg>
+  <div class="chart-legend" id="legend4"></div>
+  <p style="font-size:0.68rem;color:rgba(255,255,255,0.25);margin:8px 0 0;">Note: 2020 data missing due to COVID-19</p>
+</div>
+
+<!-- ── Conclusion ── -->
+<h2>Conclusion</h2>
+<p>The financial barriers to entry at the elite level have never been higher. Driven by the deep pockets of state-backed ownership, renewed interest of investment funds and the emerging market power of the MLS, football club valuations show no signs of plateauing. As the sport continues to explore new markets and expanded tournament formats, the global race towards the first $10B football club may have already well and truly begun.</p>
+
+<p class="source">Source: Forbes &mdash; <a href="https://www.linkedin.com/in/bodiud/" target="_blank">Linkedin @david</a></p>
+
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+// ── Data (same as bar chart race) ──
+const raw = [{"year":2007,"team":"Manchester United","league":"Premier League","value":1453},{"year":2007,"team":"Real Madrid","league":"La Liga","value":1036},{"year":2007,"team":"Arsenal","league":"Premier League","value":915},{"year":2007,"team":"Bayern Munich","league":"Bundesliga","value":838},{"year":2007,"team":"Milan","league":"Serie A","value":824},{"year":2007,"team":"Juventus","league":"Serie A","value":567},{"year":2007,"team":"Internazionale","league":"Serie A","value":555},{"year":2007,"team":"Liverpool","league":"Premier League","value":537},{"year":2007,"team":"Barcelona","league":"La Liga","value":535},{"year":2007,"team":"Schalke 04","league":"Bundesliga","value":471},{"year":2007,"team":"Chelsea","league":"Premier League","value":454},{"year":2007,"team":"Lyon","league":"Ligue 1","value":343},{"year":2007,"team":"Newcastle United","league":"Premier League","value":260},{"year":2007,"team":"Tottenham Hotspur","league":"Premier League","value":243},{"year":2007,"team":"Roma","league":"Serie A","value":224},{"year":2007,"team":"Hamburger SV","league":"Bundesliga","value":221},{"year":2007,"team":"Manchester City","league":"Premier League","value":208},{"year":2007,"team":"Borussia Dortmund","league":"Bundesliga","value":199},{"year":2007,"team":"Ajax","league":"Eredivisie","value":196},{"year":2007,"team":"Celtic","league":"Scottish Premiership","value":185},{"year":2008,"team":"Manchester United","league":"Premier League","value":1800},{"year":2008,"team":"Real Madrid","league":"La Liga","value":1285},{"year":2008,"team":"Arsenal","league":"Premier League","value":1200},{"year":2008,"team":"Liverpool","league":"Premier League","value":1050},{"year":2008,"team":"Bayern Munich","league":"Bundesliga","value":917},{"year":2008,"team":"Milan","league":"Serie A","value":798},{"year":2008,"team":"Barcelona","league":"La Liga","value":784},{"year":2008,"team":"Chelsea","league":"Premier League","value":764},{"year":2008,"team":"Juventus","league":"Serie A","value":510},{"year":2008,"team":"Schalke 04","league":"Bundesliga","value":470},{"year":2008,"team":"Roma","league":"Serie A","value":434},{"year":2008,"team":"Tottenham Hotspur","league":"Premier League","value":414},{"year":2008,"team":"Lyon","league":"Ligue 1","value":408},{"year":2008,"team":"Internazionale","league":"Serie A","value":403},{"year":2008,"team":"Borussia Dortmund","league":"Bundesliga","value":323},{"year":2008,"team":"Newcastle United","league":"Premier League","value":300},{"year":2008,"team":"Hamburger SV","league":"Bundesliga","value":293},{"year":2008,"team":"Werder Bremen","league":"Bundesliga","value":262},{"year":2008,"team":"Valencia","league":"La Liga","value":254},{"year":2008,"team":"Celtic","league":"Scottish Premiership","value":227},{"year":2009,"team":"Manchester United","league":"Premier League","value":1870},{"year":2009,"team":"Real Madrid","league":"La Liga","value":1353},{"year":2009,"team":"Arsenal","league":"Premier League","value":1200},{"year":2009,"team":"Bayern Munich","league":"Bundesliga","value":1110},{"year":2009,"team":"Liverpool","league":"Premier League","value":1010},{"year":2009,"team":"Milan","league":"Serie A","value":990},{"year":2009,"team":"Barcelona","league":"La Liga","value":960},{"year":2009,"team":"Chelsea","league":"Premier League","value":800},{"year":2009,"team":"Juventus","league":"Serie A","value":600},{"year":2009,"team":"Schalke 04","league":"Bundesliga","value":510},{"year":2009,"team":"Tottenham Hotspur","league":"Premier League","value":445},{"year":2009,"team":"Lyon","league":"Ligue 1","value":423},{"year":2009,"team":"Roma","league":"Serie A","value":381},{"year":2009,"team":"Internazionale","league":"Serie A","value":370},{"year":2009,"team":"Hamburger SV","league":"Bundesliga","value":330},{"year":2009,"team":"Borussia Dortmund","league":"Bundesliga","value":325},{"year":2009,"team":"Manchester City","league":"Premier League","value":310},{"year":2009,"team":"Werder Bremen","league":"Bundesliga","value":292},{"year":2009,"team":"Newcastle United","league":"Premier League","value":285},{"year":2009,"team":"VfB Stuttgart","league":"Bundesliga","value":264},{"year":2010,"team":"Manchester United","league":"Premier League","value":1835},{"year":2010,"team":"Real Madrid","league":"La Liga","value":1323},{"year":2010,"team":"Arsenal","league":"Premier League","value":1181},{"year":2010,"team":"Barcelona","league":"La Liga","value":1000},{"year":2010,"team":"Bayern Munich","league":"Bundesliga","value":990},{"year":2010,"team":"Liverpool","league":"Premier League","value":822},{"year":2010,"team":"Milan","league":"Serie A","value":800},{"year":2010,"team":"Juventus","league":"Serie A","value":656},{"year":2010,"team":"Chelsea","league":"Premier League","value":646},{"year":2010,"team":"Internazionale","league":"Serie A","value":413},{"year":2010,"team":"Schalke 04","league":"Bundesliga","value":384},{"year":2010,"team":"Tottenham Hotspur","league":"Premier League","value":372},{"year":2010,"team":"Lyon","league":"Ligue 1","value":333},{"year":2010,"team":"Hamburger SV","league":"Bundesliga","value":329},{"year":2010,"team":"Roma","league":"Serie A","value":308},{"year":2010,"team":"Werder Bremen","league":"Bundesliga","value":274},{"year":2010,"team":"Marseille","league":"Ligue 1","value":262},{"year":2010,"team":"Borussia Dortmund","league":"Bundesliga","value":261},{"year":2010,"team":"Manchester City","league":"Premier League","value":258},{"year":2010,"team":"Newcastle United","league":"Premier League","value":198},{"year":2011,"team":"Manchester United","league":"Premier League","value":1864},{"year":2011,"team":"Real Madrid","league":"La Liga","value":1451},{"year":2011,"team":"Arsenal","league":"Premier League","value":1192},{"year":2011,"team":"Bayern Munich","league":"Bundesliga","value":1048},{"year":2011,"team":"Barcelona","league":"La Liga","value":975},{"year":2011,"team":"Milan","league":"Serie A","value":838},{"year":2011,"team":"Chelsea","league":"Premier League","value":658},{"year":2011,"team":"Juventus","league":"Serie A","value":628},{"year":2011,"team":"Liverpool","league":"Premier League","value":552},{"year":2011,"team":"Internazionale","league":"Serie A","value":441},{"year":2011,"team":"Tottenham Hotspur","league":"Premier League","value":412},{"year":2011,"team":"Schalke 04","league":"Bundesliga","value":377},{"year":2011,"team":"Lyon","league":"Ligue 1","value":358},{"year":2011,"team":"Hamburger SV","league":"Bundesliga","value":340},{"year":2011,"team":"Manchester City","league":"Premier League","value":291},{"year":2011,"team":"VfB Stuttgart","league":"Bundesliga","value":281},{"year":2011,"team":"Werder Bremen","league":"Bundesliga","value":279},{"year":2011,"team":"Marseille","league":"Ligue 1","value":277},{"year":2011,"team":"Atlético Madrid","league":"La Liga","value":275},{"year":2011,"team":"Borussia Dortmund","league":"Bundesliga","value":260},{"year":2012,"team":"Manchester United","league":"Premier League","value":2235},{"year":2012,"team":"Real Madrid","league":"La Liga","value":1877},{"year":2012,"team":"Barcelona","league":"La Liga","value":1307},{"year":2012,"team":"Arsenal","league":"Premier League","value":1292},{"year":2012,"team":"Bayern Munich","league":"Bundesliga","value":1235},{"year":2012,"team":"Milan","league":"Serie A","value":989},{"year":2012,"team":"Chelsea","league":"Premier League","value":761},{"year":2012,"team":"Liverpool","league":"Premier League","value":619},{"year":2012,"team":"Juventus","league":"Serie A","value":591},{"year":2012,"team":"Schalke 04","league":"Bundesliga","value":587},{"year":2012,"team":"Tottenham Hotspur","league":"Premier League","value":564},{"year":2012,"team":"Internazionale","league":"Serie A","value":490},{"year":2012,"team":"Manchester City","league":"Premier League","value":443},{"year":2012,"team":"Borussia Dortmund","league":"Bundesliga","value":394},{"year":2012,"team":"Lyon","league":"Ligue 1","value":385},{"year":2012,"team":"Hamburger SV","league":"Bundesliga","value":355},{"year":2012,"team":"Roma","league":"Serie A","value":354},{"year":2012,"team":"Marseille","league":"Ligue 1","value":349},{"year":2012,"team":"Valencia","league":"La Liga","value":288},{"year":2012,"team":"Napoli","league":"Serie A","value":283},{"year":2013,"team":"Real Madrid","league":"La Liga","value":3300},{"year":2013,"team":"Manchester United","league":"Premier League","value":3165},{"year":2013,"team":"Barcelona","league":"La Liga","value":2600},{"year":2013,"team":"Arsenal","league":"Premier League","value":1326},{"year":2013,"team":"Bayern Munich","league":"Bundesliga","value":1309},{"year":2013,"team":"Milan","league":"Serie A","value":945},{"year":2013,"team":"Chelsea","league":"Premier League","value":901},{"year":2013,"team":"Juventus","league":"Serie A","value":694},{"year":2013,"team":"Manchester City","league":"Premier League","value":689},{"year":2013,"team":"Liverpool","league":"Premier League","value":651},{"year":2013,"team":"Tottenham Hotspur","league":"Premier League","value":520},{"year":2013,"team":"Schalke 04","league":"Bundesliga","value":498},{"year":2013,"team":"Borussia Dortmund","league":"Bundesliga","value":456},{"year":2013,"team":"Internazionale","league":"Serie A","value":401},{"year":2013,"team":"Lyon","league":"Ligue 1","value":368},{"year":2013,"team":"Corinthians","league":"Brasileirão","value":358},{"year":2013,"team":"Napoli","league":"Serie A","value":330},{"year":2013,"team":"Hamburger SV","league":"Bundesliga","value":300},{"year":2013,"team":"Marseille","league":"Ligue 1","value":285},{"year":2013,"team":"Newcastle United","league":"Premier League","value":263},{"year":2014,"team":"Real Madrid","league":"La Liga","value":3440},{"year":2014,"team":"Barcelona","league":"La Liga","value":3200},{"year":2014,"team":"Manchester United","league":"Premier League","value":2810},{"year":2014,"team":"Bayern Munich","league":"Bundesliga","value":1850},{"year":2014,"team":"Arsenal","league":"Premier League","value":1331},{"year":2014,"team":"Chelsea","league":"Premier League","value":868},{"year":2014,"team":"Manchester City","league":"Premier League","value":863},{"year":2014,"team":"Milan","league":"Serie A","value":856},{"year":2014,"team":"Juventus","league":"Serie A","value":850},{"year":2014,"team":"Liverpool","league":"Premier League","value":691},{"year":2014,"team":"Borussia Dortmund","league":"Bundesliga","value":599},{"year":2014,"team":"Schalke 04","league":"Bundesliga","value":580},{"year":2014,"team":"Tottenham Hotspur","league":"Premier League","value":514},{"year":2014,"team":"Internazionale","league":"Serie A","value":483},{"year":2014,"team":"Paris Saint-Germain","league":"Ligue 1","value":415},{"year":2014,"team":"Galatasaray","league":"Süper Lig","value":347},{"year":2014,"team":"Atlético Madrid","league":"La Liga","value":328},{"year":2014,"team":"Hamburger SV","league":"Bundesliga","value":326},{"year":2014,"team":"Roma","league":"Serie A","value":307},{"year":2014,"team":"Napoli","league":"Serie A","value":296},{"year":2015,"team":"Real Madrid","league":"La Liga","value":3260},{"year":2015,"team":"Barcelona","league":"La Liga","value":3160},{"year":2015,"team":"Manchester United","league":"Premier League","value":3100},{"year":2015,"team":"Bayern Munich","league":"Bundesliga","value":2350},{"year":2015,"team":"Manchester City","league":"Premier League","value":1380},{"year":2015,"team":"Chelsea","league":"Premier League","value":1370},{"year":2015,"team":"Arsenal","league":"Premier League","value":1310},{"year":2015,"team":"Liverpool","league":"Premier League","value":982},{"year":2015,"team":"Juventus","league":"Serie A","value":837},{"year":2015,"team":"Milan","league":"Serie A","value":775},{"year":2015,"team":"Borussia Dortmund","league":"Bundesliga","value":700},{"year":2015,"team":"Paris Saint-Germain","league":"Ligue 1","value":634},{"year":2015,"team":"Tottenham Hotspur","league":"Premier League","value":600},{"year":2015,"team":"Schalke 04","league":"Bundesliga","value":572},{"year":2015,"team":"Internazionale","league":"Serie A","value":439},{"year":2015,"team":"Atlético Madrid","league":"La Liga","value":436},{"year":2015,"team":"Napoli","league":"Serie A","value":353},{"year":2015,"team":"Newcastle United","league":"Premier League","value":349},{"year":2015,"team":"West Ham United","league":"Premier League","value":309},{"year":2015,"team":"Galatasaray","league":"Süper Lig","value":294},{"year":2016,"team":"Real Madrid","league":"La Liga","value":3645},{"year":2016,"team":"Barcelona","league":"La Liga","value":3549},{"year":2016,"team":"Manchester United","league":"Premier League","value":3317},{"year":2016,"team":"Bayern Munich","league":"Bundesliga","value":2678},{"year":2016,"team":"Arsenal","league":"Premier League","value":2017},{"year":2016,"team":"Manchester City","league":"Premier League","value":1921},{"year":2016,"team":"Chelsea","league":"Premier League","value":1661},{"year":2016,"team":"Liverpool","league":"Premier League","value":1548},{"year":2016,"team":"Juventus","league":"Serie A","value":1299},{"year":2016,"team":"Tottenham Hotspur","league":"Premier League","value":1017},{"year":2016,"team":"Borussia Dortmund","league":"Bundesliga","value":836},{"year":2016,"team":"Milan","league":"Serie A","value":825},{"year":2016,"team":"Paris Saint-Germain","league":"Ligue 1","value":814},{"year":2016,"team":"Schalke 04","league":"Bundesliga","value":655},{"year":2016,"team":"Atlético Madrid","league":"La Liga","value":633},{"year":2016,"team":"Internazionale","league":"Serie A","value":559},{"year":2016,"team":"West Ham United","league":"Premier League","value":542},{"year":2016,"team":"Roma","league":"Serie A","value":508},{"year":2016,"team":"Napoli","league":"Serie A","value":396},{"year":2016,"team":"Newcastle United","league":"Premier League","value":383},{"year":2017,"team":"Manchester United","league":"Premier League","value":3690},{"year":2017,"team":"Barcelona","league":"La Liga","value":3635},{"year":2017,"team":"Real Madrid","league":"La Liga","value":3580},{"year":2017,"team":"Bayern Munich","league":"Bundesliga","value":2713},{"year":2017,"team":"Manchester City","league":"Premier League","value":2083},{"year":2017,"team":"Arsenal","league":"Premier League","value":1932},{"year":2017,"team":"Chelsea","league":"Premier League","value":1845},{"year":2017,"team":"Liverpool","league":"Premier League","value":1492},{"year":2017,"team":"Juventus","league":"Serie A","value":1258},{"year":2017,"team":"Tottenham Hotspur","league":"Premier League","value":1058},{"year":2017,"team":"Paris Saint-Germain","league":"Ligue 1","value":841},{"year":2017,"team":"Borussia Dortmund","league":"Bundesliga","value":808},{"year":2017,"team":"Milan","league":"Serie A","value":802},{"year":2017,"team":"Atlético Madrid","league":"La Liga","value":732},{"year":2017,"team":"West Ham United","league":"Premier League","value":634},{"year":2017,"team":"Schalke 04","league":"Bundesliga","value":629},{"year":2017,"team":"Roma","league":"Serie A","value":569},{"year":2017,"team":"Internazionale","league":"Serie A","value":537},{"year":2017,"team":"Leicester City","league":"Premier League","value":413},{"year":2017,"team":"Napoli","league":"Serie A","value":379},{"year":2018,"team":"Manchester United","league":"Premier League","value":4123},{"year":2018,"team":"Real Madrid","league":"La Liga","value":4088},{"year":2018,"team":"Barcelona","league":"La Liga","value":4060},{"year":2018,"team":"Bayern Munich","league":"Bundesliga","value":3063},{"year":2018,"team":"Manchester City","league":"Premier League","value":2474},{"year":2018,"team":"Arsenal","league":"Premier League","value":2238},{"year":2018,"team":"Chelsea","league":"Premier League","value":2062},{"year":2018,"team":"Liverpool","league":"Premier League","value":1944},{"year":2018,"team":"Juventus","league":"Serie A","value":1472},{"year":2018,"team":"Tottenham Hotspur","league":"Premier League","value":1237},{"year":2018,"team":"Paris Saint-Germain","league":"Ligue 1","value":917},{"year":2018,"team":"Borussia Dortmund","league":"Bundesliga","value":901},{"year":2018,"team":"Atlético Madrid","league":"La Liga","value":848},{"year":2018,"team":"West Ham United","league":"Premier League","value":754},{"year":2018,"team":"Schalke 04","league":"Bundesliga","value":707},{"year":2018,"team":"Roma","league":"Serie A","value":618},{"year":2018,"team":"Milan","league":"Serie A","value":612},{"year":2018,"team":"Internazionale","league":"Serie A","value":606},{"year":2018,"team":"Leicester City","league":"Premier League","value":500},{"year":2018,"team":"Napoli","league":"Serie A","value":471},{"year":2019,"team":"Real Madrid","league":"La Liga","value":4239},{"year":2019,"team":"Barcelona","league":"La Liga","value":4205},{"year":2019,"team":"Manchester United","league":"Premier League","value":3808},{"year":2019,"team":"Bayern Munich","league":"Bundesliga","value":3024},{"year":2019,"team":"Manchester City","league":"Premier League","value":2688},{"year":2019,"team":"Chelsea","league":"Premier League","value":2576},{"year":2019,"team":"Arsenal","league":"Premier League","value":2268},{"year":2019,"team":"Liverpool","league":"Premier League","value":2183},{"year":2019,"team":"Tottenham Hotspur","league":"Premier League","value":1624},{"year":2019,"team":"Juventus","league":"Serie A","value":1512},{"year":2019,"team":"Paris Saint-Germain","league":"Ligue 1","value":1092},{"year":2019,"team":"Atlético Madrid","league":"La Liga","value":953},{"year":2019,"team":"Borussia Dortmund","league":"Bundesliga","value":896},{"year":2019,"team":"Schalke 04","league":"Bundesliga","value":683},{"year":2019,"team":"Internazionale","league":"Serie A","value":672},{"year":2019,"team":"Roma","league":"Serie A","value":622},{"year":2019,"team":"West Ham United","league":"Premier League","value":616},{"year":2019,"team":"Milan","league":"Serie A","value":583},{"year":2019,"team":"Everton","league":"Premier League","value":476},{"year":2019,"team":"Newcastle United","league":"Premier League","value":381},{"year":2021,"team":"Barcelona","league":"La Liga","value":4760},{"year":2021,"team":"Real Madrid","league":"La Liga","value":4750},{"year":2021,"team":"Bayern Munich","league":"Bundesliga","value":4215},{"year":2021,"team":"Manchester United","league":"Premier League","value":4200},{"year":2021,"team":"Liverpool","league":"Premier League","value":4100},{"year":2021,"team":"Manchester City","league":"Premier League","value":4000},{"year":2021,"team":"Chelsea","league":"Premier League","value":3200},{"year":2021,"team":"Arsenal","league":"Premier League","value":2800},{"year":2021,"team":"Paris Saint-Germain","league":"Ligue 1","value":2500},{"year":2021,"team":"Tottenham Hotspur","league":"Premier League","value":2300},{"year":2021,"team":"Juventus","league":"Serie A","value":1950},{"year":2021,"team":"Borussia Dortmund","league":"Bundesliga","value":1900},{"year":2021,"team":"Atlético Madrid","league":"La Liga","value":1000},{"year":2021,"team":"Internazionale","league":"Serie A","value":743},{"year":2021,"team":"Everton","league":"Premier League","value":658},{"year":2021,"team":"Milan","league":"Serie A","value":559},{"year":2021,"team":"Roma","league":"Serie A","value":548},{"year":2021,"team":"West Ham United","league":"Premier League","value":508},{"year":2021,"team":"Leicester City","league":"Premier League","value":455},{"year":2021,"team":"Ajax","league":"Eredivisie","value":413},{"year":2022,"team":"Real Madrid","league":"La Liga","value":5100},{"year":2022,"team":"Barcelona","league":"La Liga","value":5000},{"year":2022,"team":"Manchester United","league":"Premier League","value":4600},{"year":2022,"team":"Liverpool","league":"Premier League","value":4450},{"year":2022,"team":"Bayern Munich","league":"Bundesliga","value":4275},{"year":2022,"team":"Manchester City","league":"Premier League","value":4250},{"year":2022,"team":"Paris Saint-Germain","league":"Ligue 1","value":3200},{"year":2022,"team":"Chelsea","league":"Premier League","value":3100},{"year":2022,"team":"Juventus","league":"Serie A","value":2450},{"year":2022,"team":"Tottenham Hotspur","league":"Premier League","value":2350},{"year":2022,"team":"Arsenal","league":"Premier League","value":2050},{"year":2022,"team":"Borussia Dortmund","league":"Bundesliga","value":1800},{"year":2022,"team":"Atlético Madrid","league":"La Liga","value":1500},{"year":2022,"team":"Milan","league":"Serie A","value":1200},{"year":2022,"team":"Internazionale","league":"Serie A","value":1000},{"year":2022,"team":"Everton","league":"Premier League","value":940},{"year":2022,"team":"Leicester City","league":"Premier League","value":925},{"year":2022,"team":"West Ham United","league":"Premier League","value":900},{"year":2022,"team":"Leeds United","league":"Premier League","value":800},{"year":2022,"team":"Aston Villa","league":"Premier League","value":750},{"year":2023,"team":"Real Madrid","league":"La Liga","value":6070},{"year":2023,"team":"Manchester United","league":"Premier League","value":6000},{"year":2023,"team":"Barcelona","league":"La Liga","value":5508},{"year":2023,"team":"Liverpool","league":"Premier League","value":5288},{"year":2023,"team":"Manchester City","league":"Premier League","value":4990},{"year":2023,"team":"Bayern Munich","league":"Bundesliga","value":4860},{"year":2023,"team":"Paris Saint-Germain","league":"Ligue 1","value":4212},{"year":2023,"team":"Chelsea","league":"Premier League","value":3100},{"year":2023,"team":"Tottenham Hotspur","league":"Premier League","value":2803},{"year":2023,"team":"Arsenal","league":"Premier League","value":2263},{"year":2023,"team":"Juventus","league":"Serie A","value":2160},{"year":2023,"team":"Borussia Dortmund","league":"Bundesliga","value":1928},{"year":2023,"team":"Atlético Madrid","league":"La Liga","value":1539},{"year":2023,"team":"Milan","league":"Serie A","value":1200},{"year":2023,"team":"West Ham United","league":"Premier League","value":1079},{"year":2023,"team":"Internazionale","league":"Serie A","value":1026},{"year":2023,"team":"LAFC","league":"MLS","value":1000},{"year":2023,"team":"LA Galaxy","league":"MLS","value":925},{"year":2023,"team":"Atlanta United","league":"MLS","value":850},{"year":2023,"team":"Crystal Palace","league":"Premier League","value":806},{"year":2024,"team":"Real Madrid","league":"La Liga","value":6600},{"year":2024,"team":"Manchester United","league":"Premier League","value":6550},{"year":2024,"team":"Barcelona","league":"La Liga","value":5600},{"year":2024,"team":"Liverpool","league":"Premier League","value":5370},{"year":2024,"team":"Manchester City","league":"Premier League","value":5100},{"year":2024,"team":"Bayern Munich","league":"Bundesliga","value":5000},{"year":2024,"team":"Paris Saint-Germain","league":"Ligue 1","value":4400},{"year":2024,"team":"Tottenham Hotspur","league":"Premier League","value":3200},{"year":2024,"team":"Chelsea","league":"Premier League","value":3130},{"year":2024,"team":"Arsenal","league":"Premier League","value":2600},{"year":2024,"team":"Juventus","league":"Serie A","value":2050},{"year":2024,"team":"Borussia Dortmund","league":"Bundesliga","value":1980},{"year":2024,"team":"Atlético Madrid","league":"La Liga","value":1600},{"year":2024,"team":"Milan","league":"Serie A","value":1430},{"year":2024,"team":"LAFC","league":"MLS","value":1200},{"year":2024,"team":"West Ham United","league":"Premier League","value":1100},{"year":2024,"team":"Inter Miami","league":"MLS","value":1030},{"year":2024,"team":"Internazionale","league":"Serie A","value":1000},{"year":2024,"team":"LA Galaxy","league":"MLS","value":950},{"year":2024,"team":"Atlanta United","league":"MLS","value":900},{"year":2025,"team":"Real Madrid","league":"La Liga","value":6750},{"year":2025,"team":"Manchester United","league":"Premier League","value":6600},{"year":2025,"team":"Barcelona","league":"La Liga","value":5650},{"year":2025,"team":"Liverpool","league":"Premier League","value":5400},{"year":2025,"team":"Manchester City","league":"Premier League","value":5300},{"year":2025,"team":"Bayern Munich","league":"Bundesliga","value":5100},{"year":2025,"team":"Paris Saint-Germain","league":"Ligue 1","value":4600},{"year":2025,"team":"Arsenal","league":"Premier League","value":3400},{"year":2025,"team":"Tottenham Hotspur","league":"Premier League","value":3300},{"year":2025,"team":"Chelsea","league":"Premier League","value":3250},{"year":2025,"team":"Juventus","league":"Serie A","value":2150},{"year":2025,"team":"Borussia Dortmund","league":"Bundesliga","value":2050},{"year":2025,"team":"Atlético Madrid","league":"La Liga","value":1700},{"year":2025,"team":"Milan","league":"Serie A","value":1500},{"year":2025,"team":"LAFC","league":"MLS","value":1250},{"year":2025,"team":"Inter Miami","league":"MLS","value":1200},{"year":2025,"team":"Internazionale","league":"Serie A","value":1150},{"year":2025,"team":"West Ham United","league":"Premier League","value":1125},{"year":2025,"team":"Newcastle United","league":"Premier League","value":1100},{"year":2025,"team":"LA Galaxy","league":"MLS","value":1000}];
+
+const LEAGUE_COLORS = {
+  "Premier League":       "#3b7dd8",
+  "La Liga":              "#e04558",
+  "Bundesliga":           "#b0b0b8",
+  "Serie A":              "#6CABDD",
+  "Ligue 1":              "#9b8ec4",
+  "MLS":                  "#a0a0a0",
+  "Eredivisie":           "#C07840",
+  "Scottish Premiership": "#5A8A6E",
+  "Süper Lig":            "#B86B5A",
+  "Brasileirão":          "#5AAA7A",
+};
+
+const years = [...new Set(raw.map(d => d.year))].sort((a, b) => a - b);
+const TOP_N = 20;
+const tooltip = document.getElementById("tooltip");
+const isMobile = window.innerWidth <= 600;
+
+// ── Logo helpers ──
+const LEAGUE_LOGO_MAP = {
+  "Premier League": "logos/premier-league.svg",
+  "La Liga": "logos/la-liga.svg",
+  "Bundesliga": "logos/bundesliga.svg",
+  "Serie A": "logos/serie-a.svg",
+  "Ligue 1": "logos/ligue-1.svg",
+  "MLS": "logos/mls.svg",
+  "Eredivisie": "logos/eredivisie.svg",
+  "Scottish Premiership": "logos/scottish-premiership.svg",
+  "Süper Lig": "logos/super-lig.svg",
+  "Brasileirão": "logos/brasileirao.svg",
+};
+
+const CLUB_LOGO_MAP = {
+  "Manchester City": "logos/manchester-city.png",
+  "Paris Saint-Germain": "logos/paris-saint-germain.png",
+};
+
+const LOGO_SIZE = 16;
+
+function addLogoLabel(g, src, xPos, yPos) {
+  g.append("foreignObject")
+    .attr("x", xPos)
+    .attr("y", yPos - LOGO_SIZE / 2)
+    .attr("width", LOGO_SIZE)
+    .attr("height", LOGO_SIZE)
+    .append("xhtml:img")
+    .attr("src", src)
+    .attr("width", LOGO_SIZE)
+    .attr("height", LOGO_SIZE)
+    .style("object-fit", "contain")
+    .style("display", "block");
+}
+
+// ── Shared helpers ──
+function showTooltip(evt, html) {
+  tooltip.innerHTML = html;
+  tooltip.style.opacity = 1;
+  const x = Math.min(evt.clientX + 12, window.innerWidth - 180);
+  const y = evt.clientY - 36;
+  tooltip.style.left = x + "px";
+  tooltip.style.top = y + "px";
+}
+function hideTooltip() { tooltip.style.opacity = 0; }
+
+function makeLegend(id, items) {
+  document.getElementById(id).innerHTML = items
+    .map(([label, color]) => `<span class="chart-legend-item"><span class="chart-legend-swatch" style="background:${color}"></span>${label}</span>`)
+    .join("");
+}
+
+// ════════════════════════════════════════════════════
+// CHART 1: Stacked Area — Total valuation by league
+// ════════════════════════════════════════════════════
+(function chart1() {
+  const margin = { top: 16, right: 32, bottom: 28, left: 48 };
+  const W = 680, H = 300;
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart1")
+    .attr("viewBox", `0 0 ${W} ${H}`)
+    .attr("preserveAspectRatio", "xMidYMid meet");
+  const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+  // Aggregate: for each year, sum top-20 values by league
+  const leagueOrder = ["Premier League","La Liga","Bundesliga","Serie A","Ligue 1","MLS","Eredivisie","Scottish Premiership","Süper Lig","Brasileirão"];
+  const stackData = years.map(y => {
+    const top20 = raw.filter(d => d.year === y).sort((a,b) => b.value - a.value).slice(0, TOP_N);
+    const row = { year: y };
+    leagueOrder.forEach(l => row[l] = 0);
+    top20.forEach(d => { if (row[d.league] !== undefined) row[d.league] += d.value; });
+    return row;
+  });
+
+  // Only include leagues that appear
+  const activeLeagues = leagueOrder.filter(l => stackData.some(r => r[l] > 0));
+
+  const stack = d3.stack().keys(activeLeagues).order(d3.stackOrderNone).offset(d3.stackOffsetNone);
+  const series = stack(stackData);
+
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0, w]);
+  const y = d3.scaleLinear().domain([0, d3.max(series[series.length-1], d => d[1]) / 1000]).range([h, 0]);
+
+  // Grid lines
+  y.ticks(5).forEach(tick => {
+    g.append("line")
+      .attr("x1", 0).attr("x2", w)
+      .attr("y1", y(tick)).attr("y2", y(tick))
+      .attr("stroke", "rgba(255,255,255,0.06)");
+  });
+
+  // Areas
+  const area = d3.area()
+    .x(d => x(d.data.year))
+    .y0(d => y(d[0] / 1000))
+    .y1(d => y(d[1] / 1000))
+    .curve(d3.curveMonotoneX);
+
+  series.forEach(s => {
+    g.append("path")
+      .datum(s)
+      .attr("d", area)
+      .attr("fill", LEAGUE_COLORS[s.key])
+      .attr("opacity", 0.8);
+  });
+
+  // End labels — league logos at right edge of each band
+  series.forEach(s => {
+    const lastPoint = s[s.length - 1];
+    const bandMid = (lastPoint[0] + lastPoint[1]) / 2;
+    if ((lastPoint[1] - lastPoint[0]) / 1000 > 1.5) { // only if band is wide enough
+      addLogoLabel(g, LEAGUE_LOGO_MAP[s.key], x(years[years.length - 1]) + 8, y(bandMid / 1000));
+    }
+  });
+
+  // Floor line (20th place value)
+  const floorData = years.map(y => {
+    const top20 = raw.filter(d => d.year === y).sort((a,b) => b.value - a.value).slice(0, TOP_N);
+    return { year: y, value: top20[top20.length - 1]?.value || 0 };
+  });
+
+  // Secondary Y axis for floor on right side — but let's just annotate
+  // Add floor as text annotations at start and end
+  const floorLine = d3.line().x(d => x(d.year)).y(d => y(d.value / 1000)).curve(d3.curveMonotoneX);
+
+  // Axes
+  g.append("g")
+    .attr("transform", `translate(0,${h})`)
+    .call(d3.axisBottom(x).ticks(years.length).tickFormat(d3.format("d")).tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text")
+    .attr("fill", "rgba(255,255,255,0.35)")
+    .attr("font-size", "10px")
+    .attr("dy", "12");
+
+  g.append("g")
+    .call(d3.axisLeft(y).ticks(5).tickFormat(d => "$" + d + "B").tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text")
+    .attr("fill", "rgba(255,255,255,0.35)")
+    .attr("font-size", "10px");
+
+  // Interactive overlay
+  const overlay = g.append("rect").attr("width", w).attr("height", h).attr("fill", "transparent");
+  const vline = g.append("line").attr("y1", 0).attr("y2", h).attr("stroke", "rgba(255,255,255,0.2)").attr("stroke-dasharray", "3,3").style("display", "none");
+
+  overlay.on("mousemove", function(evt) {
+    const [mx] = d3.pointer(evt);
+    const yr = Math.round(x.invert(mx));
+    const closest = years.reduce((a, b) => Math.abs(b - yr) < Math.abs(a - yr) ? b : a);
+    const row = stackData.find(d => d.year === closest);
+    if (!row) return;
+    vline.attr("x1", x(closest)).attr("x2", x(closest)).style("display", null);
+    const total = activeLeagues.reduce((s, l) => s + row[l], 0);
+    const breakdown = activeLeagues.filter(l => row[l] > 0)
+      .sort((a, b) => row[b] - row[a])
+      .map(l => `<span style="color:${LEAGUE_COLORS[l]}">${l}</span>: $${(row[l]/1000).toFixed(1)}B`)
+      .join("<br>");
+    showTooltip(evt, `<strong>${closest}</strong> &mdash; Total: $${(total/1000).toFixed(1)}B<br>${breakdown}`);
+  });
+  overlay.on("mouseleave", () => { hideTooltip(); vline.style("display", "none"); });
+
+  makeLegend("legend1", activeLeagues.map(l => [l, LEAGUE_COLORS[l]]));
+})();
+
+
+// ════════════════════════════════════════════════════
+// CHART 2: Line — Club count per league in top 20
+// ════════════════════════════════════════════════════
+(function chart2() {
+  const margin = { top: 16, right: 80, bottom: 28, left: 36 };
+  const W = 680, H = 280;
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart2")
+    .attr("viewBox", `0 0 ${W} ${H}`)
+    .attr("preserveAspectRatio", "xMidYMid meet");
+  const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const focusLeagues = ["Premier League", "La Liga", "Bundesliga", "Serie A", "Ligue 1", "MLS"];
+
+  // Count clubs per league per year
+  const countData = years.map(y => {
+    const top20 = raw.filter(d => d.year === y).sort((a,b) => b.value - a.value).slice(0, TOP_N);
+    const row = { year: y };
+    focusLeagues.forEach(l => row[l] = top20.filter(d => d.league === l).length);
+    return row;
+  });
+
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0, w]);
+  const y = d3.scaleLinear().domain([0, 12]).range([h, 0]);
+
+  // Grid
+  [2, 4, 6, 8, 10].forEach(tick => {
+    g.append("line").attr("x1", 0).attr("x2", w).attr("y1", y(tick)).attr("y2", y(tick)).attr("stroke", "rgba(255,255,255,0.06)");
+  });
+
+  const line = d3.line().x(d => x(d.year)).y(d => y(d.count)).curve(d3.curveMonotoneX);
+
+  focusLeagues.forEach(league => {
+    const lineData = countData.map(d => ({ year: d.year, count: d[league] }));
+
+    g.append("path")
+      .datum(lineData)
+      .attr("d", line)
+      .attr("fill", "none")
+      .attr("stroke", LEAGUE_COLORS[league])
+      .attr("stroke-width", league === "Premier League" ? 2.5 : 1.5)
+      .attr("opacity", league === "Premier League" ? 1 : 0.7);
+
+    // Dots
+    g.selectAll(`.dot-${league.replace(/\s/g, "")}`)
+      .data(lineData)
+      .join("circle")
+      .attr("cx", d => x(d.year))
+      .attr("cy", d => y(d.count))
+      .attr("r", 2.5)
+      .attr("fill", LEAGUE_COLORS[league])
+      .attr("opacity", league === "Premier League" ? 1 : 0.6);
+
+  });
+
+  // End labels — group by count, place side by side if sharing same value
+  const lastRow = countData[countData.length - 1];
+  const byCount = {};
+  focusLeagues.forEach(l => {
+    const c = lastRow[l];
+    if (!byCount[c]) byCount[c] = [];
+    byCount[c].push(l);
+  });
+
+  const xEnd = x(years[years.length - 1]) + 8;
+  Object.entries(byCount).forEach(([count, leagues]) => {
+    const yPos = y(+count);
+    leagues.forEach((l, i) => {
+      addLogoLabel(g, LEAGUE_LOGO_MAP[l], xEnd + i * (LOGO_SIZE + 3), yPos);
+    });
+  });
+
+  // Axes
+  g.append("g")
+    .attr("transform", `translate(0,${h})`)
+    .call(d3.axisBottom(x).ticks(years.length).tickFormat(d3.format("d")).tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("fill", "rgba(255,255,255,0.35)").attr("font-size", "10px").attr("dy", "12");
+
+  g.append("g")
+    .call(d3.axisLeft(y).ticks(6).tickFormat(d3.format("d")).tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("fill", "rgba(255,255,255,0.35)").attr("font-size", "10px");
+
+  // Interactive
+  const overlay = g.append("rect").attr("width", w).attr("height", h).attr("fill", "transparent");
+  const vline = g.append("line").attr("y1", 0).attr("y2", h).attr("stroke", "rgba(255,255,255,0.2)").attr("stroke-dasharray", "3,3").style("display", "none");
+
+  overlay.on("mousemove", function(evt) {
+    const [mx] = d3.pointer(evt);
+    const yr = Math.round(x.invert(mx));
+    const closest = years.reduce((a, b) => Math.abs(b - yr) < Math.abs(a - yr) ? b : a);
+    const row = countData.find(d => d.year === closest);
+    if (!row) return;
+    vline.attr("x1", x(closest)).attr("x2", x(closest)).style("display", null);
+    const lines = focusLeagues.filter(l => row[l] > 0)
+      .sort((a, b) => row[b] - row[a])
+      .map(l => `<span style="color:${LEAGUE_COLORS[l]}">${l}</span>: ${row[l]}`)
+      .join("<br>");
+    showTooltip(evt, `<strong>${closest}</strong><br>${lines}`);
+  });
+  overlay.on("mouseleave", () => { hideTooltip(); vline.style("display", "none"); });
+
+  makeLegend("legend2", focusLeagues.map(l => [l, LEAGUE_COLORS[l]]));
+})();
+
+
+// ════════════════════════════════════════════════════
+// CHART 3: State Ownership — Man City & PSG vs peers
+// ════════════════════════════════════════════════════
+(function chart3() {
+  const margin = { top: 16, right: 80, bottom: 28, left: 48 };
+  const W = 680, H = 300;
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart3")
+    .attr("viewBox", `0 0 ${W} ${H}`)
+    .attr("preserveAspectRatio", "xMidYMid meet");
+  const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+  // Get Man City and PSG data across years
+  const mcData = years.map(y => {
+    const d = raw.find(r => r.year === y && r.team === "Manchester City");
+    return { year: y, value: d ? d.value : null };
+  }).filter(d => d.value !== null);
+
+  const psgData = years.map(y => {
+    const d = raw.find(r => r.year === y && r.team === "Paris Saint-Germain");
+    return { year: y, value: d ? d.value : null };
+  }).filter(d => d.value !== null);
+
+  const allVals = [...mcData, ...psgData].map(d => d.value);
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0, w]);
+  const y2 = d3.scaleLinear().domain([0, d3.max(allVals) * 1.1]).range([h, 0]);
+
+  // Grid
+  y2.ticks(5).forEach(tick => {
+    g.append("line").attr("x1", 0).attr("x2", w).attr("y1", y2(tick)).attr("y2", y2(tick)).attr("stroke", "rgba(255,255,255,0.06)");
+  });
+
+  const line = d3.line().x(d => x(d.year)).y(d => y2(d.value)).curve(d3.curveMonotoneX).defined(d => d.value !== null);
+
+  // Acquisition markers
+  // Man City: 2008, PSG: 2011
+  [{ year: 2008, label: "City acquired" }, { year: 2011, label: "PSG acquired" }].forEach(m => {
+    g.append("line")
+      .attr("x1", x(m.year)).attr("x2", x(m.year))
+      .attr("y1", 0).attr("y2", h)
+      .attr("stroke", "rgba(255,255,255,0.15)")
+      .attr("stroke-dasharray", "4,3");
+    g.append("text")
+      .attr("x", x(m.year) + 4).attr("y", 8)
+      .attr("fill", "rgba(255,255,255,0.3)")
+      .attr("font-size", "9px")
+      .text(m.label);
+  });
+
+  // Man City
+  g.append("path").datum(mcData).attr("d", line)
+    .attr("fill", "none").attr("stroke", "#6CABDD").attr("stroke-width", 2.5);
+  mcData.forEach(d => {
+    g.append("circle").attr("cx", x(d.year)).attr("cy", y2(d.value)).attr("r", 3).attr("fill", "#6CABDD");
+  });
+
+  // PSG
+  g.append("path").datum(psgData).attr("d", line)
+    .attr("fill", "none").attr("stroke", "#e04558").attr("stroke-width", 2.5);
+  psgData.forEach(d => {
+    g.append("circle").attr("cx", x(d.year)).attr("cy", y2(d.value)).attr("r", 3).attr("fill", "#e04558");
+  });
+
+  // End labels — club logos
+  const mcLast = mcData[mcData.length - 1];
+  const psgLast = psgData[psgData.length - 1];
+  addLogoLabel(g, CLUB_LOGO_MAP["Manchester City"], x(mcLast.year) + 8, y2(mcLast.value));
+  addLogoLabel(g, CLUB_LOGO_MAP["Paris Saint-Germain"], x(psgLast.year) + 8, y2(psgLast.value));
+
+
+  // Axes
+  g.append("g")
+    .attr("transform", `translate(0,${h})`)
+    .call(d3.axisBottom(x).ticks(years.length).tickFormat(d3.format("d")).tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("fill", "rgba(255,255,255,0.35)").attr("font-size", "10px").attr("dy", "12");
+
+  g.append("g")
+    .call(d3.axisLeft(y2).ticks(5).tickFormat(d => "$" + d3.format(",")(d) + "M").tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("fill", "rgba(255,255,255,0.35)").attr("font-size", "10px");
+
+  // Tooltip
+  const overlay = g.append("rect").attr("width", w).attr("height", h).attr("fill", "transparent");
+  const vline = g.append("line").attr("y1", 0).attr("y2", h).attr("stroke", "rgba(255,255,255,0.2)").attr("stroke-dasharray", "3,3").style("display", "none");
+
+  overlay.on("mousemove", function(evt) {
+    const [mx] = d3.pointer(evt);
+    const yr = Math.round(x.invert(mx));
+    const closest = years.reduce((a, b) => Math.abs(b - yr) < Math.abs(a - yr) ? b : a);
+    vline.attr("x1", x(closest)).attr("x2", x(closest)).style("display", null);
+    const mc = mcData.find(d => d.year === closest);
+    const psg = psgData.find(d => d.year === closest);
+    let html = `<strong>${closest}</strong><br>`;
+    if (mc) html += `<span style="color:#6CABDD">Man City</span>: $${d3.format(",")(mc.value)}M<br>`;
+    if (psg) html += `<span style="color:#e04558">PSG</span>: $${d3.format(",")(psg.value)}M`;
+    showTooltip(evt, html);
+  });
+  overlay.on("mouseleave", () => { hideTooltip(); vline.style("display", "none"); });
+
+  makeLegend("legend3", [["Manchester City", "#6CABDD"], ["PSG", "#e04558"]]);
+})();
+
+
+// ════════════════════════════════════════════════════
+// CHART 4: MLS vs Serie A — Combined valuation in top 20
+// ════════════════════════════════════════════════════
+(function chart4() {
+  const margin = { top: 16, right: 56, bottom: 28, left: 48 };
+  const W = 680, H = 280;
+  const w = W - margin.left - margin.right;
+  const h = H - margin.top - margin.bottom;
+
+  const svg = d3.select("#chart4")
+    .attr("viewBox", `0 0 ${W} ${H}`)
+    .attr("preserveAspectRatio", "xMidYMid meet");
+  const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const mlsColor = "#a0a0a0";
+  const serieAColor = "#6CABDD";
+
+  const valData = years.map(y => {
+    const top20 = raw.filter(d => d.year === y).sort((a,b) => b.value - a.value).slice(0, TOP_N);
+    return {
+      year: y,
+      mls: d3.sum(top20.filter(d => d.league === "MLS"), d => d.value),
+      serieA: d3.sum(top20.filter(d => d.league === "Serie A"), d => d.value),
+    };
+  });
+
+  const maxVal = d3.max(valData, d => Math.max(d.mls, d.serieA));
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0, w]);
+  const y = d3.scaleLinear().domain([0, maxVal / 1000 * 1.1]).range([h, 0]).nice();
+
+  // Grid
+  y.ticks(5).forEach(tick => {
+    g.append("line").attr("x1", 0).attr("x2", w).attr("y1", y(tick)).attr("y2", y(tick)).attr("stroke", "rgba(255,255,255,0.06)");
+  });
+
+  // Area fills
+  const areaGen = d3.area().x(d => x(d.year)).y0(h).curve(d3.curveMonotoneX);
+
+  g.append("path")
+    .datum(valData)
+    .attr("d", areaGen.y1(d => y(d.serieA / 1000)))
+    .attr("fill", serieAColor)
+    .attr("opacity", 0.1);
+
+  g.append("path")
+    .datum(valData)
+    .attr("d", areaGen.y1(d => y(d.mls / 1000)))
+    .attr("fill", mlsColor)
+    .attr("opacity", 0.1);
+
+  // Lines
+  const lineGen = d3.line().curve(d3.curveMonotoneX);
+
+  g.append("path")
+    .datum(valData)
+    .attr("d", lineGen.x(d => x(d.year)).y(d => y(d.serieA / 1000)))
+    .attr("fill", "none").attr("stroke", serieAColor).attr("stroke-width", 2.5);
+
+  g.append("path")
+    .datum(valData)
+    .attr("d", lineGen.x(d => x(d.year)).y(d => y(d.mls / 1000)))
+    .attr("fill", "none").attr("stroke", mlsColor).attr("stroke-width", 2.5);
+
+  // Dots
+  valData.forEach(d => {
+    g.append("circle").attr("cx", x(d.year)).attr("cy", y(d.serieA / 1000)).attr("r", 3).attr("fill", serieAColor);
+    if (d.mls > 0) g.append("circle").attr("cx", x(d.year)).attr("cy", y(d.mls / 1000)).attr("r", 3).attr("fill", mlsColor);
+  });
+
+  // End labels — league logos
+  const last = valData[valData.length - 1];
+  addLogoLabel(g, LEAGUE_LOGO_MAP["Serie A"], x(last.year) + 8, y(last.serieA / 1000));
+  addLogoLabel(g, LEAGUE_LOGO_MAP["MLS"], x(last.year) + 8, y(last.mls / 1000));
+
+  // Axes
+  g.append("g")
+    .attr("transform", `translate(0,${h})`)
+    .call(d3.axisBottom(x).ticks(years.length).tickFormat(d3.format("d")).tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("fill", "rgba(255,255,255,0.35)").attr("font-size", "10px").attr("dy", "12");
+
+  g.append("g")
+    .call(d3.axisLeft(y).ticks(5).tickFormat(d => "$" + d + "B").tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("fill", "rgba(255,255,255,0.35)").attr("font-size", "10px");
+
+  // Tooltip
+  const overlay = g.append("rect").attr("width", w).attr("height", h).attr("fill", "transparent");
+  const vline = g.append("line").attr("y1", 0).attr("y2", h).attr("stroke", "rgba(255,255,255,0.2)").attr("stroke-dasharray", "3,3").style("display", "none");
+
+  overlay.on("mousemove", function(evt) {
+    const [mx] = d3.pointer(evt);
+    const yr = Math.round(x.invert(mx));
+    const closest = years.reduce((a, b) => Math.abs(b - yr) < Math.abs(a - yr) ? b : a);
+    const row = valData.find(d => d.year === closest);
+    if (!row) return;
+    vline.attr("x1", x(closest)).attr("x2", x(closest)).style("display", null);
+    showTooltip(evt, `<strong>${closest}</strong><br><span style="color:${serieAColor}">Serie A</span>: $${(row.serieA/1000).toFixed(1)}B<br><span style="color:${mlsColor}">MLS</span>: $${(row.mls/1000).toFixed(1)}B`);
+  });
+  overlay.on("mouseleave", () => { hideTooltip(); vline.style("display", "none"); });
+
+  makeLegend("legend4", [["Serie A", serieAColor], ["MLS", mlsColor]]);
+})();
+</script>
+</body>
+</html>
