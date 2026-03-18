@@ -225,7 +225,7 @@
 <body>
 
 <a href="index.html" style="font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none;margin-bottom:8px;">&larr; Articles</a>
-<h1 id="title">Forbes Top 20 Most Valuable Football Clubs (2007)</h1>
+<h1 id="title">Forbes Top 20 Most Valuable Football Clubs (2007-2025)</h1>
 
 <div id="chart-container">
   <div id="year-display"></div>
@@ -549,7 +549,7 @@ async function main() {
     const displayYear = years[displayIdx];
     yearDisplay.textContent = displayYear;
     yearPicker.value = displayIdx;
-    document.getElementById("title").textContent = `Forbes Top 20 Most Valuable Football Clubs (${displayYear})`;
+    // Title is static: (2007-2025)
 
     if (t === 0 || fromIdx === toIdx) {
       const data = dataByYear.get(years[fromIdx]);
